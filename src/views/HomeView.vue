@@ -9,7 +9,7 @@
         <h2>GARCÍA</h2>
       </div>
     </div>
-    <div class="body">
+    <div class="sobreMi">
       <div class="sobre-mi">
         <div class="header">
           <div>
@@ -42,6 +42,9 @@
       </div>
     </div>
     <ScrollPalabras />
+    <div class="fotografiaSeccion">
+      <img src="../assets/fotoSeccionFotografiaHome" alt="" class="imagenSeccionFotografia">
+    </div>
   </div>
 </template>
 
@@ -85,7 +88,7 @@ export default {
 </script>
 
 <style scoped>
-.body {
+.sobreMi {
   padding: 80px;
 }
 
@@ -189,6 +192,13 @@ export default {
 .izquierda p {
   margin-bottom: 30px;
 }
+
+
+/*SECCION FOTOGRAFIA*/
+.imagenSeccionFotografia{
+  width: 100%;
+}
+
 
 /*TABLET AJUSTES*/
 @media (max-width: 900px) {
