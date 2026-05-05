@@ -384,6 +384,26 @@ export default {
 .overlay .socials svg {
   filter: brightness(0);
 }
+.rightSide .socials.desktop a {
+  display: inline-flex;
+  transition: transform 0.3s ease;
+}
+
+.rightSide .socials.desktop a:hover {
+  transform: translateY(-2px);
+}
+.rightSide .socials.desktop a:hover svg * {
+  fill: var(--accent) !important;
+}
+.rightSide .socials.desktop a:hover svg path,
+.rightSide .socials.desktop a:hover svg circle {
+  fill: var(--accent);
+}
+
+.rightSide .socials.desktop svg {
+  transition: fill 0.3s ease;
+}
+
 
 /* ================= FOOTER ================= */
 
