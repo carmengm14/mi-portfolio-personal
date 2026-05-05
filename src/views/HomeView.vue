@@ -29,7 +29,8 @@
               llamado la atención la tecnología, lo que me llevó a estudiar dos grados en informática, el último
               especializado en desarrollo de aplicaciones web. Pero si algo cambió mi rumbo, fue la asignatura de
               diseño: ahí descubrí mi verdadera vocación.</p>
-            <button class="btn-amarillo" @click="$router.push('/sobre-mi')">Conóceme más   <span class="arrow">→</span></button>
+            <button class="btn-amarillo" @click="$router.push('/sobre-mi')">Conóceme más <span
+                class="arrow">→</span></button>
           </div>
 
           <div class="derecha  fade-element">
@@ -43,7 +44,7 @@
     </div>
     <ScrollPalabras />
     <div class="fotografiaSeccion">
-      <img src="../assets/fotoSeccionFotografiaHome" alt="" class="imagenSeccionFotografia">
+      <img src="../assets/fotoSeccionFotografiaHome.png" alt="" class="imagenSeccionFotografia">
     </div>
   </div>
 </template>
@@ -155,7 +156,7 @@ export default {
 
 .sobre-mi {
   width: 50%;
-  margin: 0 auto;
+  margin: 10vh auto;
 }
 
 .section-title {
@@ -195,8 +196,14 @@ export default {
 
 
 /*SECCION FOTOGRAFIA*/
-.imagenSeccionFotografia{
+.fotografiaSeccion {
+  margin-top: 10vh;
+}
+
+.imagenSeccionFotografia {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 
@@ -204,6 +211,15 @@ export default {
 @media (max-width: 900px) {
   .sobre-mi {
     width: 100%;
+    margin: 10px;
+  }
+
+  .fotografiaSeccion {
+    margin-top: 2vh;
+  }
+
+  .imagenSeccionFotografia {
+    height: 50vh;
   }
 }
 
@@ -211,17 +227,19 @@ export default {
 @media (max-width: 768px) {
   .imgHeader {
     margin-top: 0;
+    height: 50vh;
   }
 
   .textos {
     right: 100px;
-    bottom: 280px;
+    bottom: 80px;
     align-items: flex-end;
   }
 
   .sobre-mi {
     width: 100%;
   }
+
   .firma {
     width: 150px;
   }

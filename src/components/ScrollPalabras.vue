@@ -28,7 +28,7 @@
   </div>
 </div>
 </template>
-<style>
+<style scoped>
 .marquee {
   overflow: hidden;
   white-space: nowrap;
