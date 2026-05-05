@@ -26,7 +26,8 @@
   /* body */
   --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* títulos */
-  --font-heading: "Archivo Black", sans-serif;;
+  --font-heading: "Archivo Black", sans-serif;
+  ;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -70,7 +71,7 @@ body {
 
 h1 {
   font-family: var(--font-heading);
-  font-weight:900;
+  font-weight: 900;
   color: var(--text-h);
   font-size: 64px;
 
@@ -95,6 +96,23 @@ h2 {
 p {
   margin: 0;
 }
+
+/*BUTTONS*/
+  .btn-amarillo {
+    align-self: flex-start;
+    padding: 12px 20px;
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn-amarillo:hover {
+    background: var(--accent);
+    color: black;
+  }
+
 
 code,
 .counter {
@@ -218,7 +236,6 @@ code {
       width: 18px;
     }
   }
-
   @media (max-width: 1024px) {
     margin-top: 20px;
     flex-wrap: wrap;
