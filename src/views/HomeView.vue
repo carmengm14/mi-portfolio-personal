@@ -41,13 +41,17 @@
         </div>
       </div>
     </div>
+    <ScrollPalabras />
   </div>
 </template>
 
 <script>
+import ScrollPalabras from '../components/ScrollPalabras.vue'
 export default {
   name: "HomeView",
-
+  components: {
+    ScrollPalabras,
+  },
   mounted() {
     this.observer = new IntersectionObserver(
       (entries) => {
