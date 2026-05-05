@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="imgHeader">
-      <img src="../assets/Rectangle 1.png" alt="hero image" />
+      <img src="../assets/fotoHomePrincipal.png" alt="hero image" />
 
       <div class="textos">
         <p>Portfolio</p>
