@@ -43,7 +43,7 @@
       </div>
     </div>
     <ScrollPalabras />
-    <div class="fotografiaSeccion">
+    <div class="fotografiaSeccion  fade-element">
       <img src="../assets/fotoSeccionFotografiaHome.png" alt="" class="imagenSeccionFotografia">
     </div>
   </div>
