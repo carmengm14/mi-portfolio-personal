@@ -61,6 +61,20 @@
       </div>
     </div>
     <GaleriaGridFotos :fotos="grid1" />
+
+    <div class="proyectosDisenyoGrafico">
+      <div class="cabeceraSeccionProyectos">
+        <div class="titulos">
+          <p class="section-title">Diseño Gráfico</p>
+          <img src="../assets/disenyoUx.svg" alt="">
+        </div>
+        <div class="verMasLinks" style="margin: 1vh 0;">
+          <button class="btn-amarillo" @click="$router.push('/trabajos')">Ver más trabajos <span
+              class="arrow">→</span></button>
+        </div>
+      </div>
+      <ProyectosCarrusel :proyectos="proyectos" />
+    </div>
   </div>
 </template>
 
@@ -68,22 +82,27 @@
 import ScrollPalabras from '../components/ScrollPalabras.vue'
 import GaleriaGridFotos from '../components/GaleriaGridFotos.vue'
 import grids from '../data/imagenesGrid.json'
+import ProyectosCarrusel from '../components/ProyectosCarrusel.vue';
+import proyectos from '../data/proyectos.json'
 
 export default {
   name: "HomeView",
   components: {
     ScrollPalabras,
     GaleriaGridFotos,
+    ProyectosCarrusel
   },
 
   data() {
     return {
       observer: null,
       grid1: [],
+      proyectos: []
     }
   },
 
   mounted() {
+    this.proyectos = proyectos
     const basePath = '../assets/fotosGridHome/'
 
     this.grid1 = grids.grid1.map(foto => {
@@ -253,6 +272,21 @@ export default {
 }
 
 
+/*SECCION TRABAJOS*/
+.proyectosDisenyoGrafico {
+  width: 50%;
+  margin: 10vh auto;
+}
+
+.cabeceraSeccionProyectos {
+  display: flex;
+  display: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 /*TABLET AJUSTES*/
 @media (max-width: 900px) {
   .sobre-mi {
@@ -270,6 +304,10 @@ export default {
 
   .tituloEncimaFoto {
     font-size: 5vh;
+  }
+
+  .proyectosDisenyoGrafico {
+    width: 89%;
   }
 }
 

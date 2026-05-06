@@ -25,6 +25,10 @@ const routes = [
     path: '/contacto',
     name: 'Contact',
     component: ContactView
+  },
+  {
+    path: "/proyecto/:id",
+    component: () => import("../views/ProyectoView.vue")
   }
 ]
 

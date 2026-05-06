@@ -56,9 +56,15 @@ export default {
 
 /*TABLET AJUSTES*/
 @media (max-width: 900px) {
-  /*GRID DE FOTOS*/
-  .gridFotos {
-    grid-template-columns: repeat(2, 1fr);
+    .gridFotos {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+    margin-top: 5vh;
+  }
+
+  .gridFotos img {
+    height: 35vh; 
+    object-fit: cover;
   }
 }
 

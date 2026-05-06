@@ -1,0 +1,18 @@
+[
+  {
+    "id": "branding-cafe",
+    "titulo": "Branding Café Aurora",
+    "categoria": ["Branding", "Diseño"],
+    "imagen": "cafe.jpg",
+    "descripcion": "Rediseño completo de identidad visual para una cafetería artesanal con enfoque minimalista y moderno. Cafetería que busca actualizarse y llegar a mayor público para obtener más ventas",
+    "ruta": "/proyecto/branding-cafe"
+  },
+  {
+    "id": "ux-app",
+    "titulo": "UX App Fitness",
+    "categoria": ["UX-UI", "Web"],
+    "imagen": "fitness.jpg",
+    "descripcion": "Diseño de experiencia de usuario para una app de entrenamiento personalizada con tracking diario. Diseño accesible, moderno e intuitivo para toda clase de usuario.",
+    "ruta": "/proyecto/ux-app"
+  }
+]
