@@ -73,8 +73,9 @@
               class="arrow">→</span></button>
         </div>
       </div>
-      <ProyectosCarrusel :proyectos="proyectos" class="fade-element"/>
     </div>
+    <ProyectosCarrusel :proyectos="proyectos" class="proyectosCarrusel fade-element" />
+
   </div>
 </template>
 
@@ -276,7 +277,6 @@ export default {
 .proyectosDisenyoGrafico {
   width: 50%;
   margin: 10vh auto;
-  background: radial-gradient(circle,rgb(58, 75, 104) 0%, rgba(31, 41, 55, 1) 50%);
 }
 
 .cabeceraSeccionProyectos {
@@ -285,6 +285,11 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.proyectosCarrusel {
+  width: 90%;
+  background: radial-gradient(circle, rgb(58, 75, 104) 0%, rgba(31, 41, 55, 1) 35%);
 }
 
 

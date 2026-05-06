@@ -101,21 +101,29 @@ export default {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 30px;
+    gap: 40px;
+    /* un poco más aire */
+    padding: 20px 40px;
+    /* respira en los lados */
+    scrollbar-width: none; /* Firefox */ 
+}
+.carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
 }
 
 .slide {
-    min-width: 320px;
+    min-width: 20vw;
+    width: 22vw;
+    flex-shrink: 0;
     cursor: pointer;
 }
 
 /* IMAGEN 4:5 */
 .img-wrapper {
     position: relative;
+    width: 100%;
     aspect-ratio: 4 / 5;
     overflow: hidden;
-    height: 60vh;
-    width: 22vw;
 }
 
 .img-wrapper img {
@@ -217,9 +225,8 @@ export default {
 
 /* DESCRIPCION */
 .info p {
-    font-family: var(--font-body);
-    opacity: 0.8;
-    width: 80%;
+    width: 90%;
+    padding-left: 2vw;
 }
 
 /* NAV */
