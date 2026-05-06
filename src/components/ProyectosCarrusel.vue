@@ -302,7 +302,7 @@ export default {
 
     /* título más compacto */
     .info h2 {
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
 
     /* tags sin romper layout */
