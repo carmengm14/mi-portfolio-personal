@@ -286,18 +286,19 @@ export default {
         scroll-snap-align: start;
     }
 
-    /* imagen sin deformar */
+    /* IMAGEN estable (IMPORTANTE) */
     .img-wrapper {
         width: 100%;
-        height: 70%;
+        height: auto;
         aspect-ratio: 4 / 5;
     }
 
+    /* título más compacto */
     .info h2 {
         font-size: 2vh;
     }
 
-    /* tags más compactas y seguras */
+    /* tags sin romper layout */
     .tags {
         max-width: 90%;
         flex-wrap: wrap;
@@ -308,7 +309,7 @@ export default {
         padding: 3px 8px;
     }
 
-    /* flechas más discretas */
+    /* botones más discretos */
     .nav {
         width: 36px;
         height: 36px;
