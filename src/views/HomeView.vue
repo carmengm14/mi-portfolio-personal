@@ -60,65 +60,66 @@
           una huella creativa.</p>
       </div>
     </div>
-    <div class="gridFotos">
-
-      <div class="foto grande">
-        <img src="../assets/fotosGridHome/foto1.jpg" />
-      </div>
-
-      <div class="foto">
-        <img src="../assets/fotosGridHome/foto2.jpg" />
-      </div>
-
-      <div class="foto">
-        <img src="../assets/fotosGridHome/foto3.jpg" />
-      </div>
-
-      <div class="foto">
-        <img src="../assets/fotosGridHome/foto4.jpg" />
-      </div>
-
-    </div>
+    <GaleriaGridFotos :fotos="grid1" />
   </div>
 </template>
 
 <script>
 import ScrollPalabras from '../components/ScrollPalabras.vue'
+import GaleriaGridFotos from '../components/GaleriaGridFotos.vue'
+import grids from '../data/imagenesGrid.json'
+
 export default {
   name: "HomeView",
   components: {
     ScrollPalabras,
+    GaleriaGridFotos,
   },
+
+  data() {
+    return {
+      observer: null,
+      grid1: [],
+    }
+  },
+
   mounted() {
+    const basePath = '../assets/fotosGridHome/'
+
+    this.grid1 = grids.grid1.map(foto => {
+      return {
+        ...foto,
+        src: new URL(basePath + foto.src, import.meta.url).href
+      }
+    })
+
+    // IntersectionObserver
     this.observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            this.observer.unobserve(entry.target);
+            entry.target.classList.add("visible")
+            this.observer.unobserve(entry.target)
           }
-        });
+        })
       },
       { threshold: 0.2 }
-    );
+    )
 
-    this.observeElements();
+    this.observeElements()
   },
 
   beforeUnmount() {
-    if (this.observer) this.observer.disconnect();
+    if (this.observer) this.observer.disconnect()
   },
 
   methods: {
     observeElements() {
-      const elements = this.$el.querySelectorAll(".fade-element");
-
-      elements.forEach((el) => {
-        this.observer.observe(el);
-      });
-    },
-  },
-};
+      const elements = this.$el.querySelectorAll(".fade-element")
+      elements.forEach(el => this.observer.observe(el))
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -251,35 +252,6 @@ export default {
   margin: 0vh auto;
 }
 
-/*GRID DE FOTOS*/
-.gridFotos img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(100%) contrast(1.1) brightness(0.9);
-  transition: filter 0.4s ease, transform 0.4s ease;
-}
-
-.gridFotos img:hover {
-  filter: grayscale(0%);
-  cursor:grab;
-}
-
-.gridFotos {
-  margin-top: 10vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-}
-
-.grande {
-  grid-row: span 2;
-}
-
-.horizontal {
-  grid-column: span 2;
-}
-
 
 /*TABLET AJUSTES*/
 @media (max-width: 900px) {
@@ -298,11 +270,6 @@ export default {
 
   .tituloEncimaFoto {
     font-size: 5vh;
-  }
-
-  /*GRID DE FOTOS*/
-  .gridFotos {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
