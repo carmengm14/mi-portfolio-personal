@@ -95,12 +95,10 @@ export default {
 
 /*SECCION HEADER*/
 .imgHeader {
-  margin-top: -70px;
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
 
 .imgHeader img {

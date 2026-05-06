@@ -211,7 +211,11 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  box-sizing: border-box;
   z-index: 10000;
 }
 
