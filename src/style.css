@@ -79,6 +79,9 @@ h1 {
     font-size: 36px;
   }
 }
+.h1-amarillo{
+  color: var(--accent) !important;
+}
 
 h2 {
   font-family: var(--font-heading);

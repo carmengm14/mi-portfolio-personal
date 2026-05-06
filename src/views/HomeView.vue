@@ -45,6 +45,39 @@
     <ScrollPalabras />
     <div class="fotografiaSeccion  fade-element">
       <img src="../assets/fotoSeccionFotografiaHome.png" alt="" class="imagenSeccionFotografia">
+      <h1 class="h1-amarillo tituloEncimaFoto fade-element">Fotografía</h1>
+    </div>
+    <div class="explicacionTextos fade-element fotografiaTextos">
+      <div class="izquierda  fade-element">
+        <p>Además del diseño, la fotografía es otra de mis grandes pasiones. Lo que empezó como un simple hobby en mi
+          infancia, con el tiempo se transformó en algo mucho más serio. Ahora, no hay viaje ni proyecto en el que mi
+          cámara y mis objetivos no sean parte esencial.</p>
+      </div>
+
+      <div class="derecha  fade-element">
+        <p>Siempre estoy en constante aprendizaje, buscando mejorar y perfeccionar cada detalle en todo lo que hago.
+          Porque para mí, el diseño y la fotografía no son solo trabajo, sino maneras de conectar con el mundo y dejar
+          una huella creativa.</p>
+      </div>
+    </div>
+    <div class="gridFotos">
+
+      <div class="foto grande">
+        <img src="../assets/fotosGridHome/foto1.jpg" />
+      </div>
+
+      <div class="foto">
+        <img src="../assets/fotosGridHome/foto2.jpg" />
+      </div>
+
+      <div class="foto">
+        <img src="../assets/fotosGridHome/foto3.jpg" />
+      </div>
+
+      <div class="foto">
+        <img src="../assets/fotosGridHome/foto4.jpg" />
+      </div>
+
     </div>
   </div>
 </template>
@@ -182,7 +215,6 @@ export default {
   flex: 1;
 }
 
-/* NO se monte el botón */
 .izquierda {
   display: flex;
   flex-direction: column;
@@ -192,16 +224,60 @@ export default {
   margin-bottom: 30px;
 }
 
-
 /*SECCION FOTOGRAFIA*/
 .fotografiaSeccion {
   margin-top: 10vh;
+  position: relative;
 }
 
 .imagenSeccionFotografia {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+}
+
+.tituloEncimaFoto {
+  font-size: 15vh;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%) rotate(8deg);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fotografiaTextos {
+  width: 50%;
+  margin: 0vh auto;
+}
+
+/*GRID DE FOTOS*/
+.gridFotos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.1) brightness(0.9);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.gridFotos img:hover {
+  filter: grayscale(0%);
+  cursor:grab;
+}
+
+.gridFotos {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.grande {
+  grid-row: span 2;
+}
+
+.horizontal {
+  grid-column: span 2;
 }
 
 
@@ -218,6 +294,15 @@ export default {
 
   .imagenSeccionFotografia {
     height: 50vh;
+  }
+
+  .tituloEncimaFoto {
+    font-size: 5vh;
+  }
+
+  /*GRID DE FOTOS*/
+  .gridFotos {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -243,29 +328,29 @@ export default {
   }
 
   .explicacionTextos {
-    display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
+  /* IMPORTANTE: mantenemos flex */
   .izquierda {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Orden correcto */
+  .izquierda p {
     order: 1;
-    margin: 0px;
   }
 
   .derecha {
     order: 2;
-    margin: 0px;
   }
 
-  /* botón pasa al final */
   .izquierda button {
     order: 3;
   }
 
-  /* importante para que funcione el order */
-  .izquierda {
-    display: contents;
-  }
+
 }
 </style>

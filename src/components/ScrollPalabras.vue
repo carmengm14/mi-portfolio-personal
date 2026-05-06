@@ -62,7 +62,6 @@
 
 /* estilo de palabras */
 .marquee h1 {
-  font-size: 24px;
   font-weight: bold;
   color: var(--text-h);
   letter-spacing: 2px;
