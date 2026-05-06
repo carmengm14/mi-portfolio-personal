@@ -18,7 +18,7 @@
           </div>
 
           <!-- SVG derecha -->
-          <div class="firma  fade-element">
+          <div class="firma fade-element">
             <img src="../assets/cgm.svg" alt="">
           </div>
         </div>
@@ -62,7 +62,7 @@
     </div>
     <GaleriaGridFotos :fotos="grid1" />
 
-    <div class="proyectosDisenyoGrafico">
+    <div class="proyectosDisenyoGrafico fade-element">
       <div class="cabeceraSeccionProyectos">
         <div class="titulos">
           <p class="section-title">Diseño Gráfico</p>
@@ -73,7 +73,7 @@
               class="arrow">→</span></button>
         </div>
       </div>
-      <ProyectosCarrusel :proyectos="proyectos" />
+      <ProyectosCarrusel :proyectos="proyectos" class="fade-element"/>
     </div>
   </div>
 </template>
@@ -82,8 +82,8 @@
 import ScrollPalabras from '../components/ScrollPalabras.vue'
 import GaleriaGridFotos from '../components/GaleriaGridFotos.vue'
 import grids from '../data/imagenesGrid.json'
-import ProyectosCarrusel from '../components/ProyectosCarrusel.vue';
-import proyectos from '../data/proyectos.json'
+import ProyectosCarrusel from '../components/ProyectosCarrusel.vue'
+import { proyectos } from "../data/proyectos"
 
 export default {
   name: "HomeView",
@@ -276,6 +276,7 @@ export default {
 .proyectosDisenyoGrafico {
   width: 50%;
   margin: 10vh auto;
+  background: radial-gradient(circle,rgb(58, 75, 104) 0%, rgba(31, 41, 55, 1) 50%);
 }
 
 .cabeceraSeccionProyectos {

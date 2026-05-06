@@ -41,7 +41,7 @@
                     </h2>
 
                     <p>
-                        {{ truncate(proyecto.descripcion, 180) }}
+                        {{ truncate(proyecto.contenido[0].descripcion || 'NADA', 180) }}
                     </p>
                 </div>
 
