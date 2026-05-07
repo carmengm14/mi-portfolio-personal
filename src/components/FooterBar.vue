@@ -3,7 +3,7 @@
     <div class="footer">
       <div class="fila">
         <div class="columna columna1">
-          <img src="../../public/logo.svg" alt="">
+           <router-link to="/"><img src="../../public/logo.svg" alt="logoCGM"></router-link>
           <p>Siempre estoy en constante aprendizaje, buscando mejorar y perfeccionar cada detalle en todo lo que hago.
           </p>
         </div>

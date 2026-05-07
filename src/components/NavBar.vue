@@ -4,7 +4,7 @@
     <nav class="navbar">
 
       <!-- IZQUIERDA -->
-      <img class="logo" src="../../public/logo.svg" alt="logo" />
+      <router-link to="/"><img class="logo" src="../../public/logo.svg" alt="logo" /></router-link>
 
       <!-- CENTRO -->
       <ul class="paginas desktop">
