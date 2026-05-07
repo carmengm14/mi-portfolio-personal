@@ -209,10 +209,11 @@ footer {
 
 .newsletter button {
   background: var(--bg);
-  color: white;
+  color: var(--accent);
   border: 1px solid var(--bg);
   padding: 0 20px;
   font-family: var(--font-mono);
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
