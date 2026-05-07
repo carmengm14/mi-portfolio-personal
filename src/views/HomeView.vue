@@ -80,12 +80,12 @@
       <div class=" contenidoIzquierda fade-element">
         <p class="section-title  fade-element">Desarrollo web</p>
         <h1 class="fade-element" style="margin-top: 0">Front-end</h1>
-        <p class="">Creo sitios web competitivos, optimizados y fáciles de gestionar. Mi enfoque combina diseño atractivo,
+        <p class="explicacionTextos">Creo sitios web competitivos, optimizados y fáciles de gestionar. Mi enfoque combina diseño atractivo,
           rendimiento y una estructura intuitiva para garantizar que cada proyecto destaque. Con optimización SEO,
           integración de herramientas avanzadas y personalización total, convierto ideas en experiencias digitales de
           alto nivel.</p>
       </div>
-      <div class="imagenDerecha">
+      <div class="imagenDerecha fade-element">
         <img class="imagenPortatil" src="../assets/mockUpDesarrolloWebPortatil.png" alt="">
       </div>
     </div>
@@ -312,11 +312,12 @@ export default {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  align-items: center;
 
 }
 
 .contenidoIzquierda {
-  width: 50%;
+  width: 30%;
 }
 
 .imagenDerecha {
