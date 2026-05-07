@@ -80,7 +80,8 @@
       <div class=" contenidoIzquierda fade-element">
         <p class="section-title  fade-element">Desarrollo web</p>
         <h1 class="fade-element" style="margin-top: 0">Front-end</h1>
-        <p class="explicacionTextos">Creo sitios web competitivos, optimizados y fáciles de gestionar. Mi enfoque combina diseño atractivo,
+        <p class="explicacionTextos">Creo sitios web competitivos, optimizados y fáciles de gestionar. Mi enfoque
+          combina diseño atractivo,
           rendimiento y una estructura intuitiva para garantizar que cada proyecto destaque. Con optimización SEO,
           integración de herramientas avanzadas y personalización total, convierto ideas en experiencias digitales de
           alto nivel.</p>
@@ -305,7 +306,7 @@ export default {
   background: radial-gradient(circle, rgb(58, 75, 104) 0%, rgba(31, 41, 55, 1) 35%);
 }
 
-/*DESARROLLO SECCION*/
+/*DESARROLLO FRONT-END SECCION*/
 .desarrolloWebContenedor {
   width: 80%;
   margin: 10vh auto;
@@ -314,14 +315,26 @@ export default {
   flex-flow: row wrap;
   align-items: center;
 
+  @media (max-width: 900px) {
+    width: 95%;
+  }
+
 }
 
 .contenidoIzquierda {
   width: 30%;
+
+  @media (max-width: 900px) {
+    width: 95%;
+  }
 }
 
 .imagenDerecha {
   width: 50%;
+
+  @media (max-width: 900px) {
+    width: 95%;
+  }
 }
 
 .imagenDerecha img {
