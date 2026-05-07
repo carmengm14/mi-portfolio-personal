@@ -232,7 +232,7 @@ footer {
   }
 
   .columna1 p {
-    width: 100%;
+    width: 90%;
   }
 
   .newsletter {
