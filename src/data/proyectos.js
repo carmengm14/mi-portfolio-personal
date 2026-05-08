@@ -138,16 +138,16 @@ export const proyectos = [
     ]
   },
   {
-  id: "web-clinica-dental",
-  titulo: "Web Clínica Dental Sonrisa",
-  categoria: ["Web", "UX-UI"],
-  imagen: "clinica.jpg",
-  ruta: "/proyecto/web-clinica-dental",
+  id: "identidad-visual-fomento-castellon",
+  titulo: "Identidad visual Fomento Castellón",
+  categoria: ["Diseño", "Branding"],
+  imagen: "escudoDetalleEnTela.png",
+  ruta: "/proyecto/identidad-visual-fomento-castellon",
 
   contenido: [
     {
       tipo: "hero",
-      imagen: "clinica.jpg",
+      imagen: "escudoDetalleEnTela.png",
       descripcion: "Diseño y desarrollo de página web para una clínica dental enfocada en mejorar su presencia digital y captación de pacientes."
     },
     {
@@ -168,31 +168,8 @@ export const proyectos = [
     },
     {
       tipo: "imagen",
-      valor: "clinica-1.png"
+      valor: "identidad.png"
     },
-    {
-      tipo: "titulo",
-      valor: "Tecnologías"
-    },
-    {
-      tipo: "texto",
-      valor: "El proyecto ha sido desarrollado utilizando tecnologías web modernas como HTML, CSS y JavaScript, con un enfoque en rendimiento y buenas prácticas.\n\nSe ha trabajado en una estructura modular que facilita el mantenimiento y la escalabilidad, así como en la optimización de tiempos de carga y accesibilidad."
-    },
-    {
-      tipo: "links",
-      botones: [
-        {
-          texto: "Ver código",
-          url: "https://github.com/tuusuario/web-clinica",
-          tipo: "github"
-        },
-        {
-          texto: "Ver web",
-          url: "https://tuproyecto.com/clinica",
-          tipo: "play"
-        }
-      ]
-    }
   ]
 }
 ]
