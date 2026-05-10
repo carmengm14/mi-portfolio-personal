@@ -14,46 +14,42 @@
       }
 
       .cls-3 {
-        letter-spacing: 0em;
-      }
-
-      .cls-4 {
         fill: #fff;
       }
 
-      .cls-5 {
+      .cls-4 {
         font-family: HelveticaNeue, 'Helvetica Neue';
         font-size: 6px;
       }
 
-      .cls-6 {
+      .cls-5 {
         letter-spacing: -.08em;
       }
 
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
       .cls-7 {
-        letter-spacing: -.02em;
-      }
-
-      .cls-8 {
-        letter-spacing: -.02em;
-      }
-
-      .cls-9 {
         letter-spacing: -.01em;
       }
 
-      .cls-10 {
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
         letter-spacing: .02em;
       }
 
-      .cls-11 {
+      .cls-10 {
         letter-spacing: 0em;
       }
     </style>
   </defs>
   <g id="Capa_1-2" data-name="Capa 1">
     <g>
-      <rect class="cls-4" x="0" y="0" width="141" height="141" rx="70.5" ry="70.5"/>
+      <rect class="cls-3" x="0" y="0" width="141" height="141" rx="70.5" ry="70.5"/>
       <g>
         <g>
           <path class="cls-2" d="M98.55,49.96l.44.73,8.68,14.57,8.72-14.57.44-.73h14.55v33.19h-13.18v-9.35l-5.16,8.62-.44.73h-10.15l-.43-.75-4.75-8.3v9.06h-13.23v-33.19h14.51Z"/>
@@ -62,8 +58,8 @@
           <rect x="69.55" y="60.36" width="11.29" height="2.89"/>
           <path d="M77.57,67.89h-17.36c.04,1.61.07,3.22.11,4.83,2.23.28,4.94.43,8.01.24,3.67-.23,6.8-.9,9.24-1.61v-3.46Z"/>
         </g>
-        <text class="cls-1" transform="translate(9.63 93.41)"><tspan x="0" y="0">UX &amp; G</tspan><tspan class="cls-6" x="40.24" y="0">R</tspan><tspan class="cls-7" x="46.71" y="0">A</tspan><tspan class="cls-3" x="54.93" y="0">P</tspan><tspan class="cls-10" x="61.72" y="0">H</tspan><tspan class="cls-9" x="69.38" y="0">I</tspan><tspan x="71.72" y="0">C </tspan><tspan class="cls-8" x="83.58" y="0">DE</tspan><tspan class="cls-9" x="97.44" y="0">S</tspan><tspan class="cls-11" x="105.04" y="0">I</tspan><tspan x="107.51" y="0">NG</tspan></text>
-        <text class="cls-5" transform="translate(48.93 101.3)"><tspan x="0" y="0">PHOTOGRAPFY</tspan></text>
+        <text class="cls-1" transform="translate(11.74 93.43) scale(.97 1)"><tspan x="0" y="0">UX &amp; G</tspan><tspan class="cls-5" x="40.24" y="0">R</tspan><tspan class="cls-6" x="46.71" y="0">A</tspan><tspan x="54.93" y="0">P</tspan><tspan class="cls-9" x="61.72" y="0">H</tspan><tspan class="cls-7" x="69.38" y="0">I</tspan><tspan x="71.72" y="0">C </tspan><tspan class="cls-6" x="83.58" y="0">DE</tspan><tspan class="cls-8" x="97.44" y="0">S</tspan><tspan class="cls-10" x="105.04" y="0">I</tspan><tspan x="107.51" y="0">NG</tspan></text>
+        <text class="cls-4" transform="translate(49.37 101.32) scale(.99 1)"><tspan x="0" y="0">PHOTOGRAPHY</tspan></text>
       </g>
     </g>
   </g>
