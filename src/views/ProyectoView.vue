@@ -201,7 +201,8 @@ export default {
 
 img {
     width: 100%;
-    height: 50vh;
+    height: auto;
+    max-height: 80vh;
     object-fit: cover;
 }
 
