@@ -1,0 +1,46 @@
+{
+  "grid1": [
+    {
+      "src": "foto1.jpg",
+      "alt": "Foto 1",
+      "clase": "grande"
+    },
+    {
+      "src": "foto2.jpg",
+      "alt": "Foto 2",
+      "clase": ""
+    },
+    {
+      "src": "foto3.jpg",
+      "alt": "Foto 3",
+      "clase": ""
+    },
+    {
+      "src": "foto4.jpg",
+      "alt": "Foto 4",
+      "clase": ""
+    }
+  ],
+  "grid2": [
+    {
+      "src": "foto5.jpg",
+      "alt": "Foto 5",
+      "clase": ""
+    },
+    {
+      "src": "foto6.jpg",
+      "alt": "Foto 6",
+      "clase": ""
+    },
+    {
+      "src": "foto7.jpg",
+      "alt": "Foto 7",
+      "clase": ""
+    },
+    {
+      "src": "foto8.jpg",
+      "alt": "Foto 8",
+      "clase": ""
+    }
+  ]
+}
