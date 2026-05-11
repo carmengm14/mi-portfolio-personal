@@ -103,7 +103,7 @@
             <div class="exp-item">
               <div>
                 <p>PRÁCTICAS G. MEDIO</p>
-                <p>[INNTEGRUM, CASTELLÓN]</p>
+                <p>[INTTEGRUM, CASTELLÓN]</p>
               </div>
 
               <div class="dates">
