@@ -1,20 +1,6 @@
 <template>
   <div style="margin-top: 10vh;">
-    <div class="desarrolloWebContenedor fade-element">
-      <div class=" contenidoIzquierda fade-element">
-        <p class="section-title  fade-element">Desarrollo web</p>
-        <h1 class="fade-element" style="margin-top: 0">Front-end</h1>
-        <p class="explicacionTextos">Creo sitios web competitivos, optimizados y fáciles de gestionar. Mi enfoque
-          combina diseño atractivo,
-          rendimiento y una estructura intuitiva para garantizar que cada proyecto destaque. Con optimización SEO,
-          integración de herramientas avanzadas y personalización total, convierto ideas en experiencias digitales de
-          alto nivel.</p>
-      </div>
-      <div class="imagenDerecha fade-element">
-        <img class="imagenPortatil" src="../assets/mockUpDesarrolloWebPortatil.png" alt="">
-      </div>
-    </div>
-    <section class="cv-section">
+        <section class="cv-section">
       <div class="cv-container">
 
         <!-- TOP -->
@@ -192,7 +178,7 @@
 
           <!-- PROGRAMAS -->
           <div class="programs">
-            <div class="section-title">[PROGRAMAS & LANGUAGES]</div>
+            <div class="section-title">[PROGRAMAS & LENGUAJES]</div>
 
             <div class="programs-grid">
 
@@ -385,10 +371,25 @@
 
       </div>
     </section>
-    <div class="fade-element" v-fade
-      style="align-content: center; display:flex; flex-flow: column wrap ; margin: 5vh auto; align-items: center">
-      <h1>Mis viajes</h1>
-      <img width="70%" src="../assets/mapa.svg" alt="">
+    <div class="desarrolloWebContenedor">
+      <div class=" contenidoIzquierda fade-element">
+        <p class="section-title  fade-element">Mis aficiones</p>
+        <h1 class="fade-element" style="margin-top: 0">Sobre mí</h1>
+        <p class="explicacionTextos">Soy una persona muy activa y siempre he estado ligada al deporte. He jugado 11 años a baloncesto, he competido en natación, me encanta el pádel y actualmente juego a fútbol desde hace 5 años. Me encanta mantenerme en movimiento, disfrutar del aire libre y compaginar mi lado creativo con un estilo de vida dinámico.
+
+Cuando no estoy diseñando o desarrollando, seguramente estoy en la playa, haciendo alguna ruta por la montaña o descubriendo nuevos sitios para comer. La gastronomía es una de mis grandes pasiones y mi plan favorito es probar restaurantes con mis amigos. Si tengo que elegir una comida, lo tengo claro: el sushi y los poke son mi debilidad.</p>
+      </div>
+    </div>
+
+    <div class=" misViajesContenedor fade-element">
+      <div class=" contenidoIzquierda fade-element">
+        <p class="section-title  fade-element">Propositos</p>
+        <h1 class="fade-element" style="margin-top: 0">Mis viajes</h1>
+        <p class="explicacionTextos">Otra de mis grandes aficiones es viajar. He tenido la suerte de conocer bastantes lugares de Europa, ya sea con amigos, con familia, en coche, en avión o de cualquier forma mientras implique descubrir sitios nuevos. Viajar me ayuda a desconectar, inspirarme y volver con nuevas ideas y perspectivas. Conocer otras culturas, paisajes y formas de vivir es algo que siempre me aporta muchísimo. Y si hay un destino con el que sueño desde hace años, ese es Hawái, mi propósito es llegar a viajar allí y conocer ese lugar con tanta naturaleza y conexión que tanto me llama.</p>
+      </div>
+      <div class="imagenDerecha fade-element">
+        <img  src="../assets/mapaEuropa.svg" alt="mapaDeMisViajes">
+      </div>
     </div>
   </div>
 </template>
@@ -438,24 +439,30 @@ export default {
 <style scoped>
 /*DESARROLLO FRONT-END SECCION*/
 .desarrolloWebContenedor {
-  width: 80%;
-  margin: 10vh auto;
+  width: 100%;
+  margin: 1vh auto;
   display: flex;
-  justify-content: center;
+  height: 100vh;
+  justify-content: left;
   flex-flow: row wrap;
   align-items: center;
-
+  background-image: url(../assets/FondoSobreMiAficiones.png);
+  background-size: cover;
   @media (max-width: 900px) {
     width: 95%;
+    height: 25vh;
+    background-image: none;
   }
 
 }
 
 .contenidoIzquierda {
   width: 30%;
-
+  padding-left: 15% ;
   @media (max-width: 900px) {
     width: 95%;
+    padding: 20px !important; 
+    margin: 0 !important;
   }
 }
 
@@ -464,6 +471,7 @@ export default {
 
   @media (max-width: 900px) {
     width: 95%;
+    margin: 0 !important;
   }
 }
 
@@ -682,6 +690,18 @@ export default {
   gap: 14px 50px;
 }
 
+
+/*SECCION MIS VIAJES*/
+.misViajesContenedor{
+  width: 100%;
+  margin: 1vh auto;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 /* TABLET */
 @media (max-width: 1200px) {
 
@@ -703,6 +723,22 @@ export default {
 
   .title-box h1 {
     font-size: clamp(70px, 13vw, 130px);
+  }
+  .misViajesContenedor{
+    height: auto;
+    padding: 60px 0;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .misViajesContenedor .imagenDerecha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .misViajesContenedor .imagenDerecha img{
+    width: 90% !important;
   }
 }
 
