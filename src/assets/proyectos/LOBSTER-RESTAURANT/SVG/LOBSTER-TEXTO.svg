@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1132.02 441.88">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Calcio, Calcio;
+        font-size: 216.03px;
+      }
+
+      .cls-2 {
+        font-family: Inter-Regular, Inter;
+        font-size: 91.91px;
+        font-variation-settings: 'wght' 400, 'slnt' 0;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <text class="cls-1" transform="translate(0 216.89) scale(1.63 1)"><tspan x="0" y="0">THE LOBSTER</tspan></text>
+      <text class="cls-2" transform="translate(25.99 412.5)"><tspan x="0" y="0">SEA FOOD RESTAURANT</tspan></text>
+    </g>
+  </g>
+</svg>
