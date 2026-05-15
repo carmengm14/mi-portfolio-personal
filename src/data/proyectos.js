@@ -80,17 +80,17 @@ export const proyectos = [
     ]
   },
   {
-    id: "buscaminas-app",
-    titulo: "Juego Buscaminas Web App",
-    categoria: ["Web", "Desarrollo"],
-    imagen: "buscaminas.jpeg",
-    ruta: "/proyecto/buscaminas-app",
+    id: "LOBSTER-BRANDING",
+    titulo: "Branding Lobster Restaurant",
+    categoria: ["Branding", "Diseño"],
+    imagen: "MOCKUP-CAMISETA-NEGRA.jpg",
+    ruta: "/proyecto/LOBSTER-BRANDING",
 
     contenido: [
       {
         tipo: "hero",
-        imagen: "buscaminas.jpeg",
-        descripcion: "Desarrollo de una aplicación web interactiva basada en el clásico juego Buscaminas, centrada en lógica, rendimiento y experiencia de usuario."
+        imagen: "DELANTAL.jpg",
+        descripcion: "Diseño de un branding para un restaurante especializado en el mar, mariscos, pescados y mucho más."
       },
       {
         tipo: "titulo",
@@ -110,7 +110,7 @@ export const proyectos = [
       },
       {
         tipo: "imagen",
-        valor: "buscaminas-1.jpg"
+        valor: "DELANTAL.jpg"
       },
       {
         tipo: "titulo",
